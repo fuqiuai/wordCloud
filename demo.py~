@@ -1,0 +1,25 @@
+# encoding=utf-8
+
+from os import path
+from collections import Counter
+import jieba
+
+def word_segment(text):
+    '''
+    通过jieba进行分词并通过空格分隔
+    '''
+    jieba_word=jieba.cut(text,cut_all=False) # cut_all是分词模式，True是全模式，False是精准模式，默认False
+    wordlist=' '.join(jieba_word)
+    return wordlist
+
+
+if __name__=='__main__':
+
+    # 获得当前路径的文件夹部分, __file__ 为当前文件
+    d = path.dirname(__file__)
+    # 读取要生成词云的文件
+    text = open(path.join(d, '中国近代史.txt')).read()
+    
+    print(word_segment(text))
+   
+    generate_wordcloud(text)
