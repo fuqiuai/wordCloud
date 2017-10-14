@@ -1,6 +1,0 @@
-plt.imshow(wc, interpolation='bilinear')
-plt.axis("off")
-plt.figure()
-plt.imshow(alice_mask, cmap=plt.cm.gray, interpolation='bilinear')
-plt.axis("off")
-plt.show()
