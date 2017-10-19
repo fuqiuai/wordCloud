@@ -17,9 +17,9 @@ def word_segment(text):
         data.append(word)
     dataDict=Counter(data)
     with open('doc//词频统计.txt','w') as fw:
-        #  for k,v in dataDict.items():
-            #  fw.write("%s,%d\n" % (k,v))
-        fw.write("%s"%dataDict)
+        for k,v in dataDict.items():
+            fw.write("%s,%d\n" % (k,v))
+        #  fw.write("%s"%dataDict)
 
 
     # 返回分词后的结果
