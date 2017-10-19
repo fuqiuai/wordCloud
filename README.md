@@ -12,8 +12,10 @@
 * 词云图可自己设定背景图（英文词云图不需先进行分词）
 
 ## 运行结果
-运行demo.py,会生成“2017年中央政府工作报告(全文).txt”的词云图，和“词频统计.txt”  
-词云图如下：  
-![image](https://raw.githubusercontent.com/fuqiuai/wordCloud/master/Images/alice.png)
+运行demo.py,会生成相应的的词云图，和“doc/词频统计.txt”
+eg:输入“alici.txt”的词云图如下：
+![image](https://raw.githubusercontent.com/fuqiuai/wordCloud/master/Images/alice.png)  
+十九大报告全文的词云图如下：
+![image](https://raw.githubusercontent.com/fuqiuai/wordCloud/master/Images/十九大.png)
 
 
