@@ -3,7 +3,7 @@
 from collections import Counter
 from os import path
 import jieba
-jieba.load_userdict(path.join(path.dirname(__file__),'userdict//userdict.txt'))
+jieba.load_userdict(path.join(path.dirname(__file__),'userdict//userdict.txt')) # 导入用户自定义词典
 
 def word_segment(text):
     '''
@@ -17,8 +17,9 @@ def word_segment(text):
         data.append(word)
     dataDict=Counter(data)
     with open('doc//词频统计.txt','w') as fw:
-        for k,v in dataDict.items():
-            fw.write("%s,%d\n" % (k,v))
+        #  for k,v in dataDict.items():
+            #  fw.write("%s,%d\n" % (k,v))
+        fw.write("%s"%dataDict)
 
 
     # 返回分词后的结果
